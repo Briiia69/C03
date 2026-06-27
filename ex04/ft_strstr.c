@@ -12,7 +12,7 @@
 
 #include <unistd.h>
 
-int	ft_strlent(char *s)
+int	ft_strlen(char *s)
 {
 	int	i;
 
@@ -31,7 +31,7 @@ char	*ft_strstr(char *str, char *to_find)
 	while (str[i])
 	{
 		j = 0;
-		while (str[i] == to_find[j])
+		while (str[i] && to_find[j] && str[i] == to_find[j])
 		{
 			i++;
 			j++;

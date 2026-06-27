@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *s)
+unsigned int	ft_strlen(char *s)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	while (s[i])
@@ -22,8 +22,8 @@ int	ft_strlen(char *s)
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	dest_len;
-	int	i;
+	unsigned int	dest_len;
+	unsigned int	i;
 
 	dest_len = ft_strlen(dest);
 	i = 0;
